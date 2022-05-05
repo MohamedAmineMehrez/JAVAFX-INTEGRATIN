@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test;
+package pidev;
 
 import java.io.IOException;
 import javafx.application.Application;
@@ -13,20 +13,23 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
  *
- * @author MOUEFEK
+ * @author EXTRA
  */
 public class NewFXMain extends Application {
-    
     @Override
     public void start(Stage primaryStage) {
        try {
-            Parent root = FXMLLoader.load(getClass().getResource("../gui/TestInterface.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("../gui/Login.fxml"));
             Scene scene = new Scene(root);
+            //primaryStage.setResizable(false);
+            primaryStage.setTitle("Clutch.GG");
+            primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("../gui/clutch.png")));
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException ex) {
@@ -40,7 +43,5 @@ public class NewFXMain extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
-    
     
 }

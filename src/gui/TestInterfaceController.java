@@ -44,6 +44,8 @@ public class TestInterfaceController implements Initializable {
     private Button btntournoi;
     @FXML
     private Button btncommande;
+    @FXML
+    private Button btnlogout;
      // i need help
     /**
      * Initializes the controller class.
@@ -103,6 +105,43 @@ public class TestInterfaceController implements Initializable {
         btncommande.setText(GoogleTranslate.translate("en",btncommande.getText()));
         btnrole.setText(GoogleTranslate.translate("en",btnrole.getText()));
         btnproduit.setText(GoogleTranslate.translate("en",btnproduit.getText()));
+    }
+
+    @FXML
+    private void onclickuser(ActionEvent event) {
+         try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("User.fxml"));
+            Parent root = loader.load();
+            UserController controller = loader.getController();
+            btnuser.getScene().setRoot(root);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    @FXML
+    private void onclickRole(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Role.fxml"));
+            Parent root = loader.load();
+            RoleController controller = loader.getController();
+            btnrole.getScene().setRoot(root);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    @FXML
+    private void logout(ActionEvent event) {
+       try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+            Parent root = loader.load();
+            LoginController controller = loader.getController();
+            btnuser.getScene().setRoot(root);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }  
+        
     }
     
 }

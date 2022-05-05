@@ -8,63 +8,68 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="562.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TestInterfaceController">
+<AnchorPane id="AnchorPane" prefHeight="444.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TestInterfaceController">
    <children>
-      <ImageView fitHeight="639.0" fitWidth="1053.0" layoutX="244.0" pickOnBounds="true">
+      <ImageView fitHeight="460.0" fitWidth="632.0" layoutX="144.0" pickOnBounds="true">
          <image>
             <Image url="@../img/cybergholy.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="welcomelabel" layoutX="743.0" layoutY="71.0" prefHeight="92.0" prefWidth="252.0" text="Bienvenu" textFill="#141414" underline="true">
+      <Label fx:id="welcomelabel" layoutX="462.0" layoutY="57.0" prefHeight="92.0" prefWidth="252.0" text="Bienvenu" textFill="#141414" underline="true">
          <font>
             <Font name="Ink Free" size="59.0" />
          </font>
       </Label>
-      <VBox prefHeight="639.0" prefWidth="244.0" spacing="10.0" style="-fx-background-color: #273842;">
+      <VBox accessibleRole="SCROLL_PANE" prefHeight="460.0" prefWidth="146.0" spacing="10.0" style="-fx-background-color: #273842;">
          <children>
-            <ImageView fitHeight="74.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Label prefHeight="49.0" prefWidth="146.0" text="   Clutch.gg" textAlignment="JUSTIFY" textFill="#f8f8f8">
+               <font>
+                  <Font name="Ink Free" size="26.0" />
+               </font>
+            </Label>
             <Button fx:id="btnArticle" blendMode="OVERLAY" mnemonicParsing="false" onAction="#redirectArticle" prefHeight="42.0" prefWidth="242.0" text="Article" textAlignment="CENTER" textFill="#141414" textOverrun="CLIP">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
             <Button fx:id="btnJeux" blendMode="OVERLAY" mnemonicParsing="false" onAction="#redirectJeux" prefHeight="39.0" prefWidth="242.0" text="jeu" textFill="#141414" textOverrun="CLIP">
                <font>
-                  <Font size="26.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
             <Button fx:id="btncommentaire" blendMode="OVERLAY" contentDisplay="TEXT_ONLY" mnemonicParsing="false" onAction="#redirectioncommentaire" prefHeight="29.0" prefWidth="242.0" text="Commentaires" textFill="#141414">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="btnuser" blendMode="OVERLAY" mnemonicParsing="false" prefHeight="4.0" prefWidth="244.0" text="Utilisateur">
+            <Button fx:id="btnuser" blendMode="OVERLAY" mnemonicParsing="false" onAction="#onclickuser" prefHeight="4.0" prefWidth="244.0" text="Utilisateur">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="btnrole" blendMode="OVERLAY" mnemonicParsing="false" prefHeight="2.0" prefWidth="244.0" text="Role">
+            <Button fx:id="btnrole" blendMode="OVERLAY" mnemonicParsing="false" onAction="#onclickRole" prefHeight="2.0" prefWidth="244.0" text="Role">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
             <Button fx:id="btnproduit" blendMode="OVERLAY" mnemonicParsing="false" prefHeight="0.0" prefWidth="244.0" text="produit">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
             <Button fx:id="btntournoi" blendMode="OVERLAY" mnemonicParsing="false" prefHeight="22.0" prefWidth="244.0" text="Tournoi">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
             <Button fx:id="btncommande" blendMode="OVERLAY" mnemonicParsing="false" prefHeight="31.0" prefWidth="243.0" text="Commande">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
          </children>
       </VBox>
-      <Button fx:id="btntraduire" blendMode="OVERLAY" layoutX="1203.0" layoutY="601.0" mnemonicParsing="false" onAction="#traduire" prefHeight="31.0" prefWidth="88.0" text="traduire" />
+      <Button fx:id="btntraduire" blendMode="OVERLAY" layoutX="588.0" layoutY="415.0" mnemonicParsing="false" onAction="#traduire" prefHeight="31.0" prefWidth="88.0" text="traduire" />
+      <Button fx:id="btnlogout" blendMode="OVERLAY" layoutX="676.0" layoutY="415.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="88.0" text="Deconnecter" />
    </children>
 </AnchorPane>
