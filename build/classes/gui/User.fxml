@@ -10,14 +10,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UserController">
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UserController">
    <children>
-      <ImageView fitHeight="407.0" fitWidth="814.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="457.0" fitWidth="814.0" pickOnBounds="true">
          <image>
             <Image url="@product-9.jpg" />
          </image>
       </ImageView>
-      <TableView fx:id="tvUser" layoutX="15.0" layoutY="73.0" onMouseClicked="#Select" prefHeight="200.0" prefWidth="631.0">
+      <TableView fx:id="tvUser" layoutX="66.0" layoutY="129.0" onMouseClicked="#Select" prefHeight="200.0" prefWidth="631.0">
         <columns>
             <TableColumn fx:id="colid" minWidth="0.0" prefWidth="0.0" text="ID" />
           <TableColumn fx:id="colnom" prefWidth="81.0" text="Nom" />
@@ -30,22 +30,22 @@
             <TableColumn fx:id="coladresse" prefWidth="91.0" text="Adresse" />
         </columns>
       </TableView>
-      <Button fx:id="btnSupprimer" layoutX="509.0" layoutY="290.0" mnemonicParsing="false" onAction="#Delete" text="Supprimer">
+      <Button fx:id="btnSupprimer" layoutX="621.0" layoutY="359.0" mnemonicParsing="false" onAction="#Delete" prefHeight="36.0" prefWidth="90.0" text="Supprimer">
          <font>
             <Font size="13.0" />
          </font>
       </Button>
-      <Button fx:id="modiferbtn" layoutX="78.0" layoutY="290.0" mnemonicParsing="false" onAction="#Modifier" text="Modifier">
+      <Button fx:id="modiferbtn" layoutX="81.0" layoutY="359.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="36.0" prefWidth="84.0" text="Modifier">
          <font>
             <Font size="13.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Retour" text="Retour" />
-      <Label layoutX="248.0" layoutY="9.0" text="Gestion User" textFill="RED">
+      <Button layoutX="21.0" layoutY="28.0" mnemonicParsing="false" onAction="#Retour" prefHeight="36.0" prefWidth="90.0" text="Retour" />
+      <Label layoutX="308.0" layoutY="27.0" text="Gestion User" textFill="RED">
          <font>
             <Font name="System Bold Italic" size="25.0" />
          </font>
       </Label>
-      <TextField fx:id="recherchetf" layoutX="497.0" layoutY="20.0" onKeyPressed="#searchUser" onKeyReleased="#searchUser" promptText="Recherche" />
+      <TextField fx:id="recherchetf" layoutX="585.0" layoutY="33.0" onKeyPressed="#searchUser" onKeyReleased="#searchUser" promptText="Recherche" />
    </children>
 </AnchorPane>
